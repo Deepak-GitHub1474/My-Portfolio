@@ -1,0 +1,167 @@
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero p {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fe2c0b;
+    color: #fff;
+    width: 8rem;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.hero p:hover {
+    background-color: #fff;
+    color: #fe2c0b;
+    border: 1px solid #fe2c0b;
+}
+
+.hero li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 33px;
+    min-width: 250px;
+    list-style: disc;
+}
+
+.hero li:hover {
+    background-color: #fe2c0b;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 6px 0 0;
+}
+
+.hero li::marker {
+    color: #fe2c0b;
+
+}
+
+.fa-github {
+    color: #000000;
+}
+
+.project-link p {
+    position: relative;
+    bottom: 10px;
+}
+
+.source-code-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+
+.fa-github:hover {
+    color: #fe2c0b;
+}
+
+
+/* Media Query */
+
+/* Medium mobile screen size */
+
+/* Small Size Mobile */
+
+@media screen and (min-width: 0px) and (max-width:281px) {
+    .hero {
+        display: grid;
+        margin: 10px;
+    }
+
+    .project-name,
+    .project-description,
+    .project-language,
+    .project-link {
+        display: grid;
+        place-items: center;
+    }
+}
+
+/* Mobile Size */
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+    .hamberger {
+        visibility: visible;
+        position: absolute;
+        left: 1rem;
+    }
+
+    .header-title {
+        margin-left: 40px;
+    }
+
+    .hire-me {
+        position: absolute;
+        right: 1rem;
+    }
+
+    .nav-el {
+        display: none;
+        position: absolute;
+        top: 6.2rem;
+        left: 1rem;
+        line-height: 40px;
+    }
+
+    .hero {
+        display: grid;
+        margin: 10px;
+    }
+
+    .container {
+        margin-bottom: 30px;
+    }
+
+    .project-name li,
+    .project-description li,
+    .project-language li {
+        font-size: 14px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        width: 6rem;
+        padding: 8px 2px;
+        text-align: center;
+    }
+
+    .hero .project-name {
+        margin-right: 4.5rem;
+    }
+
+    .source-code-link {
+        gap: 10.9px;
+    }
+
+    .project-link {
+        position: absolute;
+        right: 0.8rem;
+        top: 7rem;
+    }
+
+    .project-language {
+        /* display: none; */
+    }
+}
+
+/* Tab Screen size */
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+}

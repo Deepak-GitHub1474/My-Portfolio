@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Header Section */
+
+.hamberger {
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.header-title h2 {
+    font-size: 30px;
+}
+
+.header-title span {
+    color: #fe2c0b;
+}
+
+.nav-section {
+    height: 14vh;
+    box-shadow: 0 0 5px #fe2c0b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.nav-el {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-el a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-el a:hover {
+    color: #fe2c0b;
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+.hire-me {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fe2c0b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.hire-me:hover {
+    background-color: #fff;
+    color: #fe2c0b;
+    border: 1px solid #fe2c0b;
+}
+
+/* Main Section */
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 160px;
+    margin-left: 180px;
+}
+
+/* Main Left Section */
+.main-left-section {
+    line-height: 45px;
+}
+
+.main-left-section p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.name {
+    color: #fe2c0b;
+}
+
+.sirname {
+    color: #000000;
+}
+
+.download-cv {
+    text-decoration: none;
+    background-color: #fe2c0b;
+    color: #fff;
+    padding: 8px 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+}
+
+.download-cv:hover {
+    background-color: #fff;
+    color: #fe2c0b;
+    border: 1px solid #fe2c0b;
+}
+
+/* Main Right Section */
+
+.main-right-section {
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main-right-section img {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    transition: bottom 0.8s, left 0.8s;
+}
+
+.main-right-section:hover .bg-shape {
+    bottom: 20px;
+}
+
+.main-right-section:hover .profile-img {
+    left: 45%;
+}
+
+/* Social Media Section */
+
+.socialMedia-section {
+    margin-top: 15px;
+}
+
+.socialMedia-section i {
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.fa-github {
+    color: #000000;
+}
+
+.fa-linkedin,
+.fa-square-twitter {
+    color: #0000ff;
+}
+
+.fa-square-instagram {
+    color: #fe2c0b;
+}
+
+.fa-square-youtube {
+    color: red;
+}
+
+.fa-brands:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.5);
+}
+
+/* Media Query */
+
+/* Small mobile screen size */
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .hamberger {
+        visibility: visible;
+        position: absolute;
+        left: 1rem;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .header-title h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .hire-me {
+        position: absolute;
+        right: 1rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .nav-el {
+        display: none;
+        position: absolute;
+        top: 6.2rem;
+        left: 1rem;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .main-left-section {
+        position: absolute;
+        left: 2rem;
+        top: 7rem;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .main-left-section h2,
+    h1 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .main-left-section p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .download-cv {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+    .main-right-section {
+        width: 35%;
+        height: 40%;
+        position: absolute;
+        right: 4.5rem;
+        bottom: 0;
+    }
+}
+
+/* Medium mobile screen size */
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+    .hamberger {
+        visibility: visible;
+        position: absolute;
+        left: 1rem;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+    .header-title {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+    .hire-me {
+        position: absolute;
+        right: 1rem;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+    .nav-el {
+        display: none;
+        position: absolute;
+        top: 6.2rem;
+        left: 1rem;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+    .main-left-section {
+        position: absolute;
+        left: 2rem;
+        top: 8rem;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+    .main-left-section p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+    .main-right-section {
+        width: 35%;
+        height: 50%;
+        position: absolute;
+        right: 6rem;
+        bottom: -7rem;
+    }
+}
+
+/* Tab Screen size */
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .main-left-section {
+        position: absolute;
+        left: 3rem;
+        top: 20rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .main-left-section p{
+        line-height: 24px;
+        margin-bottom: 10px;
+        max-width: 352px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .main-right-section {
+        width: 38%;
+        height:70%;
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+    }
+}

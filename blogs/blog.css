@@ -1,0 +1,148 @@
+
+/* Form Section */
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 430px;
+  width: 355px;
+  box-shadow: 0 0 10px #fe2c0b;
+  border-radius: 10px;
+  line-height: 3rem;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+form h1{
+  text-align: center;
+  color: #fe2c0b;
+}
+
+
+label{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#form-btn{
+  padding: 5px 10px;
+  margin-top: 1rem;
+  background-color: #fe2c0b;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#form-btn:hover{
+  background-color: #fff;
+  color: #fe2c0b;
+  border: 1px solid #fe2c0b;
+}
+
+input{
+  border: 1px solid #fe2c0b;
+  outline: #fe2c0b;
+  height: 20px;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+textarea{
+  border: 1px solid #fe2c0b;
+  outline: #fe2c0b;
+  height: 80px;
+  resize: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+  .main {
+    height: 430px;
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+  .form {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+  .form h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+  label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width:280px) {
+  #form-btn {
+    padding: 5px 10px;
+  }
+}
+
+/* Medium mobile screen size */
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+  .hamberger {
+      visibility: visible;
+      position: absolute;
+      left: 1rem;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+  .header-title {
+      margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+  .hire-me {
+      position: absolute;
+      right: 1rem;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+  .nav-el {
+      display: none;
+      position: absolute;
+      top: 6.2rem;
+      left: 1rem;
+      line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+  .main {
+    height: 430px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width:767px) {
+  .form {
+    width: 260px;
+  }
+}

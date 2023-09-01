@@ -6,6 +6,7 @@
     grid-gap: 30px;
     margin-top: 30px;
     margin-left: 25px;
+    margin: 2rem;
 }
 
 .cards {
@@ -15,6 +16,11 @@
     height: 260px;
     padding: 10px 30px;
     border-radius: 4px;
+}
+
+.cards:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 5px #00ffff;
 }
 
 h1 {
@@ -30,17 +36,81 @@ p {
     font-weight: 500;
 }
 
-.skills-ul li {
+.skills-ul li, .achievements li {
     font-size: 16px;
     font-weight: 500;
+    line-height: 35px;
 }
 
 .skills-ul li::marker {
     color: #fe2c0b;
 }
 
+.skills-ul i:hover {
+    transform: scale(1);
+}
+
+.achievements li::marker {
+    color: #fe2c0b;
+}
+
+i {
+    margin-left: 5px;
+    font-size: 25px;
+    color: #000;
+}
+
+i:hover {
+    color: #fe2c0b;
+    transform: scale(1.2);
+}
+
 .cards {
     overflow: scroll;
+}
+
+.fa-html5 {
+    color: #fe2c0b;
+}
+.fa-css3-alt {
+    color: #2b0bfe;
+}
+.fa-bootstrap {
+    color: #d50bfe;
+}
+.fa-square-js {
+    color: #f6fe0b;
+}
+.fa-react {
+    color: #00ffff;
+}
+.fa-node {
+    color: #008000;
+}
+
+.skill-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .skill-container li {
+    width: 120px;
+} */
+
+.tailwind {
+    width: 30px;
+}
+
+.MySQL {
+    width: 45px;
+}
+
+.express {
+    width: 24px;
+}
+.mongoDB {
+    width: 24px;
 }
 
 /* Media Query */
@@ -49,12 +119,12 @@ p {
     .hero {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        /* width: 80%; */
     }
 }
 
 @media screen and (min-width: 0px) and (max-width:280px) {
-    .skills {
+    .skills, .achievements {
         width: 100vw;
         overflow: hidden;
     }
@@ -103,12 +173,12 @@ p {
     .hero {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        /* width: 80%; */
     }
 }
 
 @media screen and (min-width: 281px) and (max-width:767px) {
-    .skills {
+    .skills, .achievements {
         width: 100vw;
         overflow: hidden;
     }
@@ -117,5 +187,19 @@ p {
 @media screen and (min-width: 281px) and (max-width:767px) {
     .container {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 80%; */
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
     }
 }

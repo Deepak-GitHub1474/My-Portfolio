@@ -7,6 +7,8 @@
 
 body {
     background-color: #fff;
+    /* background-color: #000;
+    color: #fff; */
 }
 
 /* Header Section */
@@ -51,7 +53,7 @@ body {
     text-decoration: underline;
 }
 
-li {
+.index-el {
     list-style: none;
 }
 
@@ -97,6 +99,14 @@ li {
 
 .sirname {
     color: #000000;
+}
+
+.auto-type,.typed-cursor, .angle {
+    color: #fe2c0b;
+}
+.angle{
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .download-cv {

@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 3rem;
 }
 
 .hero p {
@@ -149,10 +150,6 @@
         position: absolute;
         right: 0.8rem;
         top: 7rem;
-    }
-
-    .project-language {
-        /* display: none; */
     }
 }
 

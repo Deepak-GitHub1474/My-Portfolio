@@ -66,3 +66,13 @@ hamberger.onclick = () =>{
     }
     
 }
+
+// Auto typing
+
+let autoType = new Typed(".auto-type", {
+    strings : ["Web Developer", "MERN Stack Developer"],
+    typeSpeed : 100,
+    backSpeed : 100,
+    loop : true,
+    cursorChar: '<span class="typed-cursor">|</span>'
+})

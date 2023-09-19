@@ -109,7 +109,7 @@ body {
     font-size: 30px;
 }
 
-.download-cv {
+.download-resume {
     text-decoration: none;
     background-color: #fe2c0b;
     color: #fff;
@@ -120,7 +120,7 @@ body {
     border: none;
 }
 
-.download-cv:hover {
+.download-resume:hover {
     background-color: #fff;
     color: #fe2c0b;
     border: 1px solid #fe2c0b;
@@ -245,7 +245,7 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width:280px) {
-    .download-cv {
+    .download-resume {
         font-size: 14px;
         margin-top: 10px;
     }

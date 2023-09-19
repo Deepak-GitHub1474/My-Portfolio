@@ -1,35 +1,3 @@
-// let socialMedia = document.querySelector(".fa-github");
-// socialMedia.onclick = () =>{
-//     // window.open("https://github.com/Deepak-GitHub1474");
-//     window.location = "https://github.com/Deepak-GitHub1474";
-// }
-
-// let socialMedia = document.querySelectorAll(".fa-brands");
-
-// socialMedia.forEach(links => {
-//     links.addEventListener("click", () => {
-//         // window.open(socialMedia.href);
-//         window.location = socialMedia.href;
-//     });
-// });
-
-// Hire Button
-
-// Create a button element
-// const button = document.createElement('button');
-
-// // Set the button's text
-// button.innerHTML = "Go to Gmail";
-
-// // Add an event listener to the button
-// button.addEventListener('click', () => {
-//   // Redirect the user to Gmail
-//   window.location = 'https://gmail.com';
-// });
-
-// // Append the button to the DOM
-// document.body.appendChild(button);
-
 // Hamberger
 
 let hamberger = document.querySelector(".hamberger")
@@ -68,11 +36,10 @@ hamberger.onclick = () =>{
 }
 
 // Auto typing
-
 let autoType = new Typed(".auto-type", {
     strings : ["Web Developer", "MERN Stack Developer"],
     typeSpeed : 100,
     backSpeed : 100,
     loop : true,
     cursorChar: '<span class="typed-cursor">|</span>'
-})
+});

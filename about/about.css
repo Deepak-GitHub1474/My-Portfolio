@@ -180,7 +180,7 @@ i:hover {
 @media screen and (min-width: 281px) and (max-width:767px) {
     .skills, .achievements {
         width: 100vw;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 }
 

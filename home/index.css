@@ -124,6 +124,7 @@ body {
     background-color: #fff;
     color: #fe2c0b;
     border: 1px solid #fe2c0b;
+    cursor: pointer;
 }
 
 /* Main Right Section */

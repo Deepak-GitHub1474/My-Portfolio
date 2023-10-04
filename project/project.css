@@ -3,162 +3,136 @@
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.hero p {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #fe2c0b;
-    color: #fff;
-    width: 8rem;
-    padding: 5px 0;
-    text-align: center;
-    border-radius: 4px;
-}
-
-.hero p:hover {
-    background-color: #fff;
-    color: #fe2c0b;
-    border: 1px solid #fe2c0b;
-}
-
-.hero li {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 33px;
-    min-width: 250px;
-    list-style: disc;
-}
-
-.hero li:hover {
-    background-color: #fe2c0b;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 0 6px 0 0;
-}
-
-.hero li::marker {
-    color: #fe2c0b;
-
-}
-
-.fa-github {
-    color: #000000;
-}
-
-.project-link p {
-    position: relative;
-    bottom: 5px;
-}
-
-.source-code-link {
+/* Project Card Styles */
+.project-container {
+    width: 270px;
+    height: 410px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 10px  #fe2c0b;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 11.5px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 16px;
+    position: relative;
 }
 
-.fa-github:hover {
+.project-container:hover {
+    box-shadow: 0 0 5px #fe2c0b;
+}
+
+/* Image Styles */
+figure {
+    width: 100%;
+    height: 180px;
+
+}
+
+.project-cover {
+    width: 100%;
+    height: 180px;
+}
+
+/* Card Body Styles */
+.card-body {
+    padding: 16px;
+}
+
+/* Project Title Styles */
+.project-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.project-badge {
+    background-color: #fe2c0b;
+    color: #fff;
+    width: fit-content;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    position: absolute;
+    top: -10rem;
+    right: 1.5rem;
+}
+
+.project-container p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+/* Language Styles */
+
+.language-container h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.language-container p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+/* Project Link Styles */
+.project-link-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.git-link-container,
+.netlify-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 7px 6px;
+    border: 1.5px solid #00000033;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    bottom: 0.6rem;
+}
+
+.git-link-container {
+    position: absolute;
+    left: 1rem;
+}
+
+.netlify-link-container {
+    position: absolute;
+    right: 1rem;
+}
+
+.git-link-container span,
+.netlify-link-container span {
+    font-size: 0.8rem;
+}
+
+/* .netlify-icon {
+    width: 18px;
+    display: inline-block;
+} */
+
+#link-icon:hover, a:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
     color: #fe2c0b;
 }
 
-
-/* Media Query */
-
-/* Medium mobile screen size */
-
-/* Small Size Mobile */
-
-@media screen and (min-width: 0px) and (max-width:281px) {
-    .hero {
-        display: grid;
-        margin: 10px;
-    }
-
-    .project-name,
-    .project-description,
-    .project-language,
-    .project-link {
-        display: grid;
-        place-items: center;
-    }
-}
-
-/* Mobile Size */
-
-@media screen and (min-width: 281px) and (max-width:767px) {
-    .hamberger {
-        visibility: visible;
-        position: absolute;
-        left: 1rem;
-    }
-
-    .header-title {
-        margin-left: 40px;
-    }
-
-    .hire-me {
-        position: absolute;
-        right: 1rem;
-    }
-
-    .nav-el {
-        display: none;
-        position: absolute;
-        top: 6.2rem;
-        left: 1rem;
-        line-height: 40px;
-    }
-
-    .hero {
-        display: grid;
-        margin: 10px;
-    }
-
-    .container {
-        margin-bottom: 30px;
-    }
-
-    .project-name li,
-    .project-description li,
-    .project-language li {
-        font-size: 14px;
-    }
-
-    .hero p {
-        font-size: 14px;
-        width: 6rem;
-        padding: 8px 2px;
-        text-align: center;
-    }
-
-    .hero .project-name {
-        margin-right: 4.5rem;
-    }
-
-    .source-code-link {
-        gap: 14.6px;
-    }
-
-    .project-link {
-        position: absolute;
-        right: 0.8rem;
-        top: 7.4rem;
-    }
-}
-
-/* Tab Screen size */
-
-@media screen and (min-width: 768px) and (max-width:1024px) {
-    .hero {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-    }
+a {
+    text-decoration: none;
+    color: #000000;
 }

@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 
 /* Project Card Styles */
@@ -12,6 +13,7 @@
     width: 270px;
     height: 410px;
     background-color: #f8f8f8;
+    border: 1px solid #fcccc5;
     box-shadow: 0px 10px  #fe2c0b;
     display: flex;
     flex-direction: column;
@@ -97,7 +99,8 @@ figure {
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
-    padding: 7px 6px;
+    padding: 6px;
+    width: 115px;
     border: 1.5px solid #00000033;
     border-radius: 4px;
     font-weight: 600;
@@ -121,10 +124,9 @@ figure {
     font-size: 0.8rem;
 }
 
-/* .netlify-icon {
+.netlify-icon {
     width: 18px;
-    display: inline-block;
-} */
+}
 
 #link-icon:hover, a:hover {
     transition: all 0.2s ease-in-out;

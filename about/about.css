@@ -84,6 +84,10 @@ p {
     color: #fe2c0b;
 }
 
+.achievements-ul {
+    list-style-position: inside;
+}
+
 i:hover {
     color: #fe2c0b;
     transform: scale(1.2);

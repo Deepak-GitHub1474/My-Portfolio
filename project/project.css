@@ -96,7 +96,7 @@ figure {
 }
 
 .git-link-container,
-.netlify-link-container {
+.demo-link-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,13 +116,13 @@ figure {
     left: 1rem;
 }
 
-.netlify-link-container {
+.demo-link-container {
     position: absolute;
     right: 1rem;
 }
 
 .git-link-container span,
-.netlify-link-container span {
+.demo-link-container span {
     font-size: 0.8rem;
 }
 

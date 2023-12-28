@@ -67,7 +67,7 @@ p {
     font-size: 60px;
 }
 
-.tailwind, .express, .mongoDB {
+.tailwind, .express, .mongoDB, .redux {
     width: 60px;
 }
 
@@ -112,6 +112,10 @@ i:hover {
 }
 .fa-node {
     color: #008000;
+}
+
+.fa-php {
+    color: #5043a5;
 }
 
 .fa-file-invoice{

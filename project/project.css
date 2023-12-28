@@ -63,8 +63,8 @@ figure {
     border-radius: 4px;
     font-weight: 700;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.1rem;
+    right: 0.11rem;
     z-index: 99;
 }
 

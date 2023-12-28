@@ -109,7 +109,7 @@ body {
     margin-bottom: 10px;
 }
 
-.express {
+.express, .redux {
     width: 40px;
 }
 
@@ -139,6 +139,10 @@ i:hover {
 }
 .fa-node {
     color: #008000;
+}
+
+.fa-php {
+    color: #5043a5;
 }
 
 /* Main Section */

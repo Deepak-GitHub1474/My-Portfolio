@@ -67,11 +67,11 @@ p {
     font-size: 60px;
 }
 
-.tailwind, .express, .mongoDB, .redux {
+.tailwind, .express, .mongoDB, .redux, .nextjs {
     width: 60px;
 }
 
-.MySQL {
+.MySQL, .postgresql {
     width: 100px;
 }
 

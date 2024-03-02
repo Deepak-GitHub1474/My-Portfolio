@@ -109,11 +109,11 @@ body {
     margin-bottom: 10px;
 }
 
-.express, .redux {
+.express, .redux, .nextjs {
     width: 40px;
 }
 
-.mongoDB {
+.mongoDB, .postgresql {
     width: 50px;
 }
 
